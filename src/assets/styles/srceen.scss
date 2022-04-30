@@ -1,0 +1,415 @@
+$pw: 100vw / 1920;
+$ph: 100vh / 1080;
+html,body{
+    padding: 0;
+    margin: 0;
+    // background-color: #040605;
+}
+//头部
+.new-header{
+    width: 100vw;
+    background-color: rgba(4,6,5,0.8);
+    z-index: 999;
+    .header01{
+        img{
+            width: 100%;
+        }
+        span{
+            color: #fff;
+            position: absolute;
+            top: 10%;
+            left: 45%;
+            font-size: 24 * $pw;
+            font-family: Microsoft YaHei;
+            font-weight: bold;
+            color: #FCFCFC;
+            text-shadow:5px 2px 6px rgba(151,252,255,0.3);
+        }
+    }
+    .header02{
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 260 * $pw;
+        // padding: 12px 0;
+        padding: 12px 0 3px 0;
+        .he-01{
+            padding: 3px 20px;
+            border-right: 2px solid rgba(151,252,255,0.7);
+            font-size: 14 * $pw;
+        }
+        .he-02{
+            border-right: 2px solid rgba(151,252,255,0.7);
+            .el-select .el-input__inner {
+                cursor: pointer;
+                border: 0;
+                background: none;
+                // padding-right: 35px;
+                width: 116 * $pw;
+                height: 22px;
+                line-height: 22px;
+                color: #fff;
+              }
+            .el-input__inner::placeholder {
+                color:#fff;
+                font-size: 14 * $pw;
+              }
+        }
+    }
+    .header-left{
+      background-color: #ddd;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 12px;
+      width: 38 * $pw;
+      height: 953 * $ph;
+      background: url(../img/left.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    .header-right{
+      background-color: #ddd;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 12px;
+      width: 38 * $pw;
+      height: 953 * $ph;
+      background: url(../img/right.png) no-repeat;
+      background-size: 100% 100%;
+    }
+}
+//中间部分
+.new-main{
+    width: 520 * $pw;
+    height: 955 * $ph;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #00F1F9;
+    .main-top{
+      width: 100%;
+      height: 151 * $ph;
+      background: url(../img/generalize.png) no-repeat;
+      background-size: 100% 100%;
+      font-size: 16 * $pw;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #D5F7FF;
+      .top-01{
+          height: 64 * $ph;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 20px;
+          span:nth-child(1){
+            font-size: 20 * $pw;
+            font-weight: bold;
+            color: #00F1F9;
+          }
+      }
+      .top-02{
+          height: 85 * $ph;
+          margin: 20px;
+          display: flex;
+          flex-direction: row;
+          .t-01{
+              width: 272 * $pw;
+              height: 62 * $ph;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              background : url(../img/genleft.png)no-repeat;
+              background-size: 100% 100%;
+              img{
+                //   width: 46 * $pw;
+                //   height: 46 * $ph;
+                  width: 42px;
+                  height: 42px;
+                  margin: 0 12px 0 20px ;
+              }
+              div{
+                span:nth-child(2){
+                    font-size: 20 * $pw;
+                    font-weight: bold;
+                    color: #63FAFF;
+                }
+              }
+          }
+          .t-02{
+            width: 197 * $pw;
+            height: 62 * $ph;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background : url(../img/genleft.png)no-repeat;
+            background-size: 100% 100%;
+            div{
+                margin: 0 11px;
+                span:nth-child(2){
+                    font-size: 20 * $pw;
+                    font-weight: bold;
+                    color: #63FAFF;
+                }
+            }
+        }
+      }
+    }
+    .main-mid{
+        width: 100%;
+        height: 784 * $ph;
+        background: url(../img/alarm.png) no-repeat;
+        background-size: 100% 100%;
+        .mid-01{
+            height: 64 * $ph;
+            line-height: 64px;
+            font-size: 20 * $pw;
+            font-weight: bold;
+            color: #00F1F9;
+            text-align: left;
+            margin: 0 20px;
+        }
+        .mid-02{
+            height: 718 * $ph;
+            margin: 0 20px;
+            .new-table-layout{
+                display: flex;
+                flex-direction: row;
+                height: 40 * $ph;
+                line-height: 40 * $ph;
+                font-size: 14 * $pw;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #E2F9FF;
+                background: rgba(169,222,255,0.15);
+                padding: 0 10px;
+                margin-bottom: 10px;
+                &.table-header{
+                    color: #85E7FF;
+                    height: 50 * $ph;
+                    line-height:  50 * $ph;
+                    background: none;
+                }
+                & > div{
+                    text-align: left;
+                    flex: 1;
+                }
+                & > div:nth-last-child(1){
+                    text-align: right;
+                    color: #00F1F9;
+                }
+            }
+
+        }
+    }
+}
+//左下
+.new-bottom{
+    width: 1244 * $pw;
+    height: 353 * $ph;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .bom-01{
+      width: 496 * $pw;
+      height: 353 * $ph;
+      background: url(../img/proportionleft.png)no-repeat;
+      background-size: 100% 100%;
+
+    }
+    .bom-02{
+      width: 728 * $pw;
+      height: 353 * $ph;
+      background: url(../img/proportionright.png)no-repeat;
+      background-size: 100% 100%;
+
+    }
+    .b-01{
+        height: 60 * $ph;
+        line-height: 60 * $ph;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 20px;
+        font-size: 16 * $pw;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #D5F7FF;
+        span:nth-child(1){
+            font-size: 20 * $pw;
+            font-family: Microsoft YaHei;
+            font-weight: bold;
+            color: #00F1F9;
+        }
+    }
+    .b-02{
+        display: flex;
+        flex-direction: row;
+        height: 286 * $ph;
+        margin: 0 20px;
+        .b-left{
+            width: 50%;
+            margin-top: 64px;
+            display: flex;
+            align-items: center;
+        }
+        .b-right{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .one{
+                flex: 1;
+                margin-top: 60px;
+                font-size: 14 * $pw;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #E2F9FF;
+                div{
+                    margin-bottom: 12px;
+                    span:nth-child(1){
+                        font-size: 20 * $pw;
+                        font-family: Microsoft YaHei;
+                        font-weight: bold;
+                        color: #00F1F9;
+                        border-bottom: 1px solid #B8FDFF;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+            div:nth-child(1){
+                .one:nth-child(2){
+                    div{
+                        span:nth-child(1){
+                            color: #FF6A29;
+                        }
+                    }
+                }
+            }
+            div:nth-child(2){
+                .one{
+                    div{
+                        span:nth-child(1){
+                            color: #FF5754;
+                        }
+                    }
+                }
+                .one:nth-child(2){
+                    div{
+                        span:nth-child(1){
+                            color: #FFC100;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+// 地图信息弹出层
+.mapcard{
+    width: 360 * $pw;
+    background: rgba(7,34,52,0.5);
+    border: 1px solid rgba(7,215,222,0.3);
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px 1px rgba(255, 255, 255, 0.3);
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    margin-bottom: 30px;
+    &.f-01{
+        min-height: 210 * $ph;
+    }
+    &.f-03{
+        min-height: 240 * $ph;
+    }
+    .top{
+        height: 32 * $ph;
+        line-height: 32 * $ph;
+        background: rgba(7,215,222,0.5);
+        text-align: left;
+        margin: 10 * $pw;
+        font-size: 14 * $pw;
+        padding: 0 12 * $pw;
+        color: #08172E;
+    }
+    .bom{
+        height: 140 * $ph;
+        margin-left: 20 * $pw;
+        margin-top: -3px;
+        font-size: 14 * $pw;
+        color: #D5F7FF;
+        .bo-01{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .to-00{
+                text-align: left;
+                div{
+                    margin-bottom: 4 * $ph;
+                    span:nth-child(2){
+                        color: #9AEBFF;
+                    }
+                }
+            }
+            .to-03{
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    span:nth-child(2){
+                        color: #9AEBFF;
+                        margin: 4 * $ph 0;
+                    }
+                }
+            }
+            .to-01{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 4 * $ph;
+                div{
+                    span:nth-child(2){
+                        color: #9AEBFF;
+                        margin: 0 4 * $ph;
+                    }
+                }
+            }
+        }
+    }
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.map{
+  z-index: 998;
+}
+.newmain{
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    z-index: 1000;
+}
+.newbottom{
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+    z-index: 1000;
+}
+.pichar{
+    margin-left: -20px;
+    z-index: 1000;
+}
+.axchar{
+    z-index: 1000;
+}
+select,option{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+}
